@@ -1,0 +1,85 @@
+*{
+    font-family: Poppins, cursive;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body{
+    background: blue;
+    width: 100%;
+}
+
+#container{
+    width: 400px;
+    height: 50px;
+    background: white;
+    margin: auto;
+    top: 45vh;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgb(22, 22, 182);
+    overflow: hidden; /*Hides the box shadow created when changing password box black <-> white*/
+}
+
+#password{
+    background-color: transparent; /*Allows the textarea to be any color*/
+    font-size: 16px;
+    width: 330px;
+    border: none;
+    padding: 3px 0;
+}
+
+#password:focus{
+    outline: none !important; /* Removes blue outline from clicking on a textbox*/
+}
+
+.fa-lock, #password{
+    color: grey;
+    z-index: 2;
+}
+
+.fa-eye-slash{
+    display: none;
+}
+
+/*Giant black box opens*/
+/*
+@keyframes blink {
+    50%{
+        box-shadow: 0 0px 0px 390px rgb(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes blink {
+    50%{
+        box-shadow: 0 0px 0px 390px rgb(0, 0, 0);
+    }
+}
+
+@-moz-keyframes blink {
+    50%{
+        box-shadow: 0 0px 0px 390px rgb(0, 0, 0);
+    }
+}
+
+.eyesAnimation {
+    animation: blink .5s 1;
+}
+*/
+
+/*Controls the password bkgd color change*/
+.eyesAnimation {
+    box-shadow: 0 0px 0px 390px rgb(0, 0, 0);
+}
+
+.eyes{
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    text-align: center;
+    transition: 0.5s;
+}

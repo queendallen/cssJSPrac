@@ -1,0 +1,79 @@
+*{
+    font-family: Poppins, cursive;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+#container{
+    margin: auto;
+    width: 50%;
+    top: 25%;
+    border: 1px solid #8052ec;
+    padding: 30px 40px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+#item{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #8052ec;
+    width: 75%;
+}
+
+#addItem{
+    padding: 10px 20px;
+    background: #8052ec;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+
+#addItem:hover{
+    background: #d161ff;
+}
+
+#listItems{
+    margin: auto;
+    width: 50%;
+    top: 30%;
+    border: 1px solid #8052ec;
+    padding: 20px 40px 30px 40px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.task{
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+.task button{
+    background-color: #8052ec;
+    color: white;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.completed{
+    text-decoration: line-through;
+}

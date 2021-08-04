@@ -1,0 +1,48 @@
+*{
+    font-family: Poppins, cursive;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+body{
+    background: #8d60ed;
+    width: 100%;
+}
+
+#container{
+    width: 400px;
+    height: 200px;
+    background: white;
+    margin: auto;
+    top: 40vh;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px #7549d1;
+    overflow: hidden; /*Hides the box shadow created when changing password box black <-> white*/
+    text-align: center;
+}
+
+#box {
+    height: 150px;
+    width: 300px;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#count {
+    color: grey;
+    text-align: end;
+}
+
+#box:focus{
+    outline: none !important; /* Removes blue outline from clicking on a textbox*/
+}
+
+p {
+    font-size: 12px;
+}
